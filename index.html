@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>JavaBlockly V1.1</title>
+  <link rel="stylesheet" type="text/css" href="bootstrap.css">
+</head>
+<body>
+  <!-- JS dependencies -->
+
+  <script src="jquery-3.4.1.js"></script>
+  <!-- Bootstrap 4 dependency -->
+  <script src="popper.min.js"></script>
+  <script src="bootstrap.js"></script>
+  <!-- bootbox code -->
+  <script src="bootbox.all.min.js"></script>
+  <script src="bootbox.locales.min.js"></script>
+  <script>
+        $(document).on("click", ".show-alert", function(e) {
+            bootbox.alert("Hello world!", function() {
+                console.log("Alert Callback");
+            });
+        });
+    </script>
+</body>
+</html>
